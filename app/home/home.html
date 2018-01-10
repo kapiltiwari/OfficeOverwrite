@@ -1,0 +1,27 @@
+{{::vm.title}}
+
+Just make a note of the existing opened file from OneDrive.
+
+<br>
+
+On clicking of the below button, it will call insertFileFromBase64 officejs api
+
+and will replace the view content.
+
+<br>
+
+The result is that existing opened file from OneDrive gets auto saved with this 
+newer content without asking user for confirmation.
+
+<div class="ms-Grid-row">
+    <div class="ms-Grid-col ms-u-sm2"></div>
+    <div class="ms-Grid-col ms-u-sm8">
+        <form name="form" ng-submit="vm.changeContent()" role="form" class="admin-form" method="post">
+            <button class="ms-Button ms-Button--primary login-button" type="submit" ng-disabled="form.$invalid">
+                <span class="ms-Button-icon"><i class="ms-Icon ms-Icon--plus"></i></span>
+                <span class="ms-Button-label">Change Content</span>
+            </button>
+        </form>
+    </div>
+    <div class="ms-Grid-col ms-u-sm2"></div>
+</div>
